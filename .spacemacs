@@ -329,8 +329,12 @@ you should place your code here."
   ;; Use utf-8 separator
   (setq powerline-default-separator 'utf-8)
 
+  ;; JS indentation
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
+
+  ;; Make cursor blink
+  (blink-cursor-mode 1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
