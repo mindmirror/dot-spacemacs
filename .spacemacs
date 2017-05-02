@@ -49,7 +49,14 @@ values."
      git
      (haskell :variables
               haskell-completion-backend 'intero
-              haskell-process-type 'stack-ghci)
+              haskell-process-type 'stack-ghci
+              ;; Use Johan Tibell style indentation
+              haskell-indentation-layout-offset 4
+              haskell-indentation-starter-offset 4
+              haskell-indentation-left-offset 4
+              haskell-indentation-ifte-offset 4
+              haskell-indentation-where-pre-offset 2
+              haskell-indentation-where-post-offset 2)
      ivy
      (javascript :variables
                  javascript-disable-tern-port-files nil)
