@@ -357,6 +357,9 @@ you should place your code here."
 
   ;; Enable company mode globally
   (global-company-mode)
+
+  ;; Enable pretty symbols
+  (global-prettify-symbols-mode 1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
