@@ -360,9 +360,13 @@ you should place your code here."
 
   ;; Enable pretty symbols
   (global-prettify-symbols-mode 1)
+
+  ;; Bind keys to cycle buffers
+  (global-set-key (kbd "C-<tab>") 'next-buffer)
+  (global-set-key (kbd "C-S-<tab>") 'previous-buffer)
   )
 
-;; Do not write anything past this comment. This is where Emacs will
+;; do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
