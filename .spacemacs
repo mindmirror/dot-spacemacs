@@ -353,6 +353,13 @@ you should place your code here."
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
 
+  ;; HTML element offset indentation
+  (setq web-mode-markup-indent-offset 2)
+  ;; CSS offest indentation
+  (setq web-mode-css-indent-offset 2)
+  ;; Script/code offset indentation
+  (setq web-mode-code-indent-offset 2)
+
   ;; Make cursor blink
   (blink-cursor-mode 1)
 
