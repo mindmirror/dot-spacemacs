@@ -174,7 +174,7 @@ values."
                                :size 14
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 1.0)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
@@ -369,6 +369,8 @@ you should place your code here."
 
   ;; Use utf-8 separator
   (setq powerline-default-separator 'utf-8)
+  ;; Set powerline separator
+  (setq powerline-default-separator nil)
 
   ;; Set fill column
   (setq-default fill-column 100)
