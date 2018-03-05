@@ -367,6 +367,8 @@ you should place your code here."
   (add-hook 'text-mode-hook #'visual-line-mode)
   ;; Hook visual-fill-column-mode to visual-line-mode
   (add-hook 'visual-line-mode-hook #'visual-fill-column-mode)
+  ;; Turn off visual-line-mode in csv-mode
+  (add-hook 'csv-mode-hook (lambda () (visual-line-mode -1) (visual-fill-column-mode -1)))
 
   ;; Use utf-8 separator
   (setq powerline-default-separator 'utf-8)
