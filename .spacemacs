@@ -416,6 +416,11 @@ you should place your code here."
     (doom-themes-neotree-config)
     (doom-themes-org-config))
 
+  ;; Set clock in/out shortcut key
+  (add-hook 'org-mode-hook
+            (lambda () (local-set-key (kbd "<f7>") #'org-clock-in)
+              (local-set-key (kbd "<f8>") #'org-clock-out)))
+
   ;; Set journal dir
   (setq org-journal-dir "~/Dropbox/Org/journal/")
   (setq org-journal-file-format "%Y-%m-%d.org")
